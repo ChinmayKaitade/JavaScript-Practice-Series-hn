@@ -35,7 +35,49 @@ const obj4 = { 5: "a", 6: "b" };
 // console.log(obj3); // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
 const obj = Object.assign({}, obj1, obj2); // --> Use this ✔️
-console.log(obj3); // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+console.log(obj); // { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
 
 const anotherObj = Object.assign({}, obj1, obj2, obj4); // --> Use this ✔️
 console.log(anotherObj); // { '1': 'a', '2': 'b', '3': 'a', '4': 'b', '5': 'a', '6': 'b' }
+
+// using spread operator ✔️
+const obj3 = { ...obj1, ...obj2 };
+console.log("Using Spread Operators :", obj3); // Using Spread Operators : { '1': 'a', '2': 'b', '3': 'a', '4': 'b' }
+
+// accessing values(data) from object in database ✔️
+const users = [
+  {
+    id: 1,
+    email: "ck@gamil.com",
+  },
+  {
+    id: 2,
+    email: "ak@gmail.com",
+  },
+  {
+    id: 3,
+    email: "sk@gmail.com",
+  },
+  {
+    id: 4,
+    email: "pk@gmail.com",
+  },
+  {
+    id: 5,
+    email: "dk@gmail.com",
+  },
+];
+
+console.log(users[1].email); // ak@gmail.com
+
+console.log(tinderUser);
+
+console.log(Object.keys(tinderUser)); // [ 'id', 'name', 'isLoggedIn' ]
+console.log(Object.values(tinderUser)); // [ '123abc', 'Sammy', false ]
+console.log(Object.entries(tinderUser)); // [ [ 'id', '123abc' ], [ 'name', 'Sammy' ], [ 'isLoggedIn', false ] ] --> every key and values is itself in an array (rarely used)
+
+console.log(tinderUser.hasOwnProperty("isLoggedIn")); // true
+console.log(tinderUser.hasOwnProperty("isLoggedOut")); // false --> as tinderUser doesn't contains "isLoggedOut" it shows false
+
+
+
