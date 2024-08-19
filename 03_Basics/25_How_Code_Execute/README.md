@@ -4,7 +4,7 @@
 
 JavaScript is a single-threaded, synchronous language, meaning it executes one command at a time in a specific order. Here's a fun and visual way to understand how JavaScript executes code:
 
-### **Execution Context** 🌍
+## Execution Context 🌍
 
 When JavaScript runs, it creates an **execution context**, which is like the environment where your code is evaluated and executed. There are two main types:
 
@@ -12,11 +12,11 @@ When JavaScript runs, it creates an **execution context**, which is like the env
 
 2. **Function Execution Context** 📦: Every time a function is called, a new execution context is created for it. This context holds the function's arguments, local variables, and its own `this` reference.
 
-### **The Call Stack** 📚
+## The Call Stack 📚
 
 The **call stack** is a special place where JavaScript keeps track of what function is currently being executed and what needs to be executed next. Think of it as a stack of plates 🍽️—last in, first out (LIFO).
 
-#### How It Works:
+## How It Works:
 
 1. **Global Execution** 🌍: When JavaScript starts, the global context is pushed onto the call stack.
 
@@ -43,7 +43,7 @@ firstFunction();
 console.log("Global Context End");
 ```
 
-#### **Call Stack Flow** 📊
+## Call Stack Flow 📊
 
 1. **Global Context** 🌍 is pushed onto the stack.
 2. `firstFunction()` is called ➡️ **firstFunction Execution Context** 📦 is pushed onto the stack.
@@ -56,7 +56,7 @@ console.log("Global Context End");
 9. `console.log("Global Context End")` 🗨️ in the global context is executed.
 10. **Global Context** 🌍 is popped off the stack, and the execution finishes 🎉.
 
-### **Visual Representation of Call Stack** 🖼️
+## Visual Representation of Call Stack 🖼️
 
 - **Initial State**: `[Global Execution Context 🌍]`
 - **After `firstFunction()` call**: `[Global Execution Context 🌍, firstFunction Execution Context 📦]`
