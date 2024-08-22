@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Creating DOM Element</title>
+    <style>
+      body {
+        background-color: #212121;
+        color: #fff;
+      }
+    </style>
+  </head>
+  <body></body>
+  <script>
+    const div = document.createElement("div");
+    console.log(div); // <div></div>
+
+    div.className = "main";
+    div.id = Math.round(Math.random() * 10 + 1);
+
+    div.setAttribute("title", "generated title");
+    div.style.backgroundColor = "green";
+    div.style.padding = "10px";
+
+    // div.innerText = "JavaScript DOM Manipulation";
+    const addText = document.createTextNode("JavaScript DOM Manipulation");
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
+  </script>
+</html>
