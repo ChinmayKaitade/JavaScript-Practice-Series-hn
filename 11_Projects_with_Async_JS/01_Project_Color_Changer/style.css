@@ -1,0 +1,60 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gilroy";
+}
+
+html,
+body {
+  width: 100%;
+  height: 100%;
+  background-color: #212121;
+  color: #f1f1f1;
+}
+
+#main {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  font-size: 2.4rem;
+}
+
+h1 span {
+  color: orange;
+}
+
+.button-container {
+  margin-top: 45px;
+  padding: 10px;
+}
+
+.button-container button {
+  padding: 7px 15px;
+  font-size: 1.8rem;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  margin-left: 15px;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-container button:hover {
+  background-color: #a3a3a3;
+  transition: all ease-in-out 0.3s;
+}
+
+footer {
+  position: absolute;
+  bottom: 30px;
+  font-size: 1.4rem;
+  cursor: pointer;
+  user-select: none;
+}
